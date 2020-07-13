@@ -1,0 +1,54 @@
+{
+  "name": "react-mk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx webpack-dev-server --mode development --hot",
+    "build": "npx webpack --mode production",
+    "test": "npx jest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test && npm run lint",
+      "pre-push": "npm test && npm run lint"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mkoptev1/React-26-06.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.1",
+    "@babel/preset-typescript": "^7.10.1",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "babel-jest": "^25.5.1",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.4.0",
+    "html-webpack-plugin": "^4.3.0",
+    "jest": "^26.1.0",
+    "ts-loader": "^8.0.0",
+    "typescript": "^3.9.6",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/polyfill": "^7.10.4",
+    "@types/jest": "^26.0.4"
+  },
+  "bugs": {
+    "url": "https://github.com/Mkoptev1/React-26-06/issues"
+  },
+  "homepage": "https://github.com/Mkoptev1/React-26-06#readme"
+}
