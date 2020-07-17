@@ -12,3 +12,5 @@ You can find basic configuration for the project on the master branch. What conf
     npm install eslint --save-dev
 * Jest
     npm install --save-dev jest
+    
+## Lesson 2:
