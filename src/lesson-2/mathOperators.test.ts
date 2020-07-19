@@ -1,4 +1,16 @@
-import { mul, div, add, minus, squared, exponent, factorial, sin, cos, tan, fib } from "./mathOperators";
+import {
+  mul,
+  div,
+  add,
+  minus,
+  squared,
+  exponent,
+  factorial,
+  sin,
+  cos,
+  tan,
+  fib,
+} from "./mathOperators";
 
 describe("mathOperators test cases", () => {
   it("mul 1 * 2 to equal 2", () => {
@@ -25,17 +37,17 @@ describe("mathOperators test cases", () => {
     expect(minus(4, 2)).toBe(2);
   });
 
-  it( "squared 4 **", () => {
+  it("squared 4 **", () => {
     expect(squared(4)).toBe(16);
-  })
+  });
 
-  it( "exponent 2 ^ 3", () => {
+  it("exponent 2 ^ 3", () => {
     expect(exponent(2, 3)).toBe(8);
-  })
+  });
 
-  it( "factorial 5 !", () => {
+  it("factorial 5 !", () => {
     expect(factorial(5)).toBe(120);
-  })
+  });
 
   it("sin 90", () => {
     expect(sin(90)).toEqual(0.8939966636005579);
@@ -52,5 +64,4 @@ describe("mathOperators test cases", () => {
   it("fib 10", () => {
     expect(fib(10)).toEqual(55);
   });
-
 });

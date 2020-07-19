@@ -4,9 +4,25 @@ import {
   mathOperators,
   mathPriorities,
   mathOperatorsPriorities,
+  mathOperatorsSingle,
 } from "./mathOperators";
 
 const [FIRST, SECOND] = mathPriorities;
+
+export const zeroPrioritiesCalc = (stack: ParsedLineType): ParsedLineType => {
+  const prevItem = stack[0];
+  const item = stack[1];
+
+  if (!isNumber(String(prevItem))) {
+    return stack;
+  }
+
+  if (!mathOperatorsSingle[item]) {
+    return stack;
+  }
+
+  return [mathOperatorsSingle[item](Number(prevItem))];
+};
 
 export const firstPrioritiesCalc = (stack: ParsedLineType): ParsedLineType =>
   stack.reduce<ParsedLineType>((result, nextItem) => {

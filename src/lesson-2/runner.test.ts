@@ -67,5 +67,5 @@ describe("Runner cases for the lesson #2 task #3", () => {
 
   it("fib 10", () => {
     expect(runner("10 fib")).toEqual(55);
-  })
+  });
 });
